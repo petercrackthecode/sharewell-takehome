@@ -5,12 +5,10 @@ import { PAGES, MODALS, type ModalType } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import Modal from "@/components/Modal";
-import { useWindowHeight } from "@react-hook/window-size";
 
 export default function Page({ params }: { params: { path: string } }) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [currModal, setCurrModal] = useState<ModalType | null>(null);
-  const height = useWindowHeight();
 
   useEffect(() => {
     if (isOpen) {

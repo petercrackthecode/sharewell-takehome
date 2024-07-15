@@ -83,7 +83,6 @@ export default function Modal({
             </div>
           </div>
           <img src={sharewellLogo.src} alt="share-well logo" className="w-auto h-auto" />
-          {/* <div className="h-full w-1/2" style={{ backgroundImage: `url(${sharewellLogo.src})` }} /> */}
         </div>
         <div className="modal-body h-1/4 flex flex-col gap-2 p-5 border-b border-b-slate-200 text-black">
           <div className="modal-body-header flex justify-between">
